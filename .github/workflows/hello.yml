@@ -1,0 +1,15 @@
+name: Hello Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  hello-job:
+    runs-on: ubuntu-latest   # Bude bežať na Linux runneri
+
+    steps:
+      # - name: Checkout code
+      #   uses: actions/checkout@v4   # Stiahne kód z repozitára
+
+       - name: Print Hello
+         run: echo "Hello from GitHub Actions 🚀"
